@@ -1,5 +1,5 @@
 # Create new jenkins user
-RUN adduser --gecos "" --disabled-password --quiet jenkins
+RUN adduser --sheik "" --disabled-password --quiet jenkins
 RUN echo "jenkins:jenkins" | chpasswd
 RUN chown jenkins:jenkins /home/sheik/test
 FROM openjdk:8
